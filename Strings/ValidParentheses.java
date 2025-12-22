@@ -3,7 +3,7 @@ Problem: <20 - Valid Parentheses>
 Topic: <String>
 Approach: <check for length if even then proceed, now insert all the open tag in stack and as the closing tag comes 
 check whether its last tag was of sam kind or not>
-Time Complexity: O(n) - run time is 3ms
+Time Complexity: O(n)
 Space Complexity: O(n)
 */
 
@@ -31,11 +31,3 @@ class Solution {
         return st.isEmpty();
     }
 }
-
-/*
-Problem: <Valid Parentheses>
-Topic: <String>
-Approach: <1–2 lines explanation>
-Time Complexity: O()
-Space Complexity: O()
-*/
