@@ -20,3 +20,32 @@ class Solution {
         return -1;
     }
 }
+
+/*
+Problem: <69 - Sqrt(x)>
+Topic: <Binary Search>
+Approach: <just check for smaller or equal an store it, and keep further checking for maybe bigger no is also possible>
+Time Complexity: O(logn)
+Space Complexity: O(1)
+*/
+
+class Solution {
+    public int mySqrt(int x) {
+        if(x==0){
+            return x;
+        }
+        int start=0; int end=x;
+        int ans=0;
+        while(start<=end){
+            int mid = (start+end)/2;
+            long m= mid*mid;
+            if(m<=x){
+                ans= mid;
+                start = mid+1;  
+            }else{
+                end= mid-1;
+            }
+        }
+        return ans;
+    }
+}
