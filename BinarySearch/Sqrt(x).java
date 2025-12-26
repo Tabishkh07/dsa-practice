@@ -38,7 +38,7 @@ class Solution {
         int ans=0;
         while(start<=end){
             int mid = (start+end)/2;
-            long m= mid*mid;
+            long m= (long)mid*mid;
             if(m<=x){
                 ans= mid;
                 start = mid+1;  
