@@ -5,6 +5,31 @@ Approach: <check the position of "." delete it and insert "[.]">
 Time Complexity: O(n)
 Space Complexity: O(n)
 */
+
+// best approch (manual) replacing
+class Solution {
+    public String defangIPaddr(String address) {
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<address.length(); i++){
+            char ch = address.charAt(i);
+            if(ch == '.'){
+                sb.append("[.]");
+            }else{
+                sb.append(ch);
+            }
+        }
+        return sb.toString();
+    }
+}
+
+// other way round -shortest way
+class Solution {
+    public String defangIPaddr(String address) {
+        return address.replace(".", "[.]");
+    }
+}
+
+// my approach
 class Solution {
     public String defangIPaddr(String address) {
         StringBuilder sb = new StringBuilder();
