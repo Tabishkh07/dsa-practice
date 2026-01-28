@@ -21,3 +21,31 @@ class Solution {
         return ans;
     }
 }
+
+/*
+Problem: <169 Majority Element>
+Topic: <Array>
+Approach: <Since majority element always exists so we use two variables one to store which element occur most (temp) and other element
+to count how many times.>
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
+class Solution {
+    public int majorityElement(int[] nums) {
+        int count = 0; 
+        int temp = 0;
+        for(int num : nums){
+            if(count == 0){
+                temp = num;
+            }
+            
+            if(temp == num){
+                count++;
+            }else{
+                count--;
+            }
+        }
+        return temp;
+    }
+}
