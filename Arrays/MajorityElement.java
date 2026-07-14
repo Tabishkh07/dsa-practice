@@ -49,3 +49,23 @@ class Solution {
         return ans;
     }
 }
+
+// IMAGINE A PROBLEM WHERE MAJORITY ELEMENT DOSENT EXIST THEN ?
+class Solution {
+    public int majorityElement(int[] nums){
+        int candidate = nums[0];
+        int count = 0;
+        for(int i: nums){
+            if(count == 0){
+                candidate = i;
+            }
+            if(candidate == i){
+                count ++;
+            }
+            else{
+                count --;
+            }
+        }
+        return count > nums.length/2 ? candidate: -1;
+    }
+}
