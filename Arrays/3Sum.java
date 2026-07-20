@@ -1,7 +1,7 @@
 /*
 Problem: <15. 3Sum>
 Topic: <Array + ArrayList>
-Approach: <3 Pointers - fixed one then check if other 2 sum to fixed one -- for duplication always check all of the pointers not just one >
+Approach: <2 Pointers and 1 fixed no- fixed one then check if other 2 sum to fixed one -- for duplication always check all of the pointers not just one >
 Time Complexity: O(n^2)
 Space Complexity: O(n)
 */
