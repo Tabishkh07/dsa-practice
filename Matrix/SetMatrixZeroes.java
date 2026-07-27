@@ -2,7 +2,7 @@
 Problem: <73. Set Matrix Zeroes>
 Topic: <Array >
 Approach: <Array for 0 on x and 0 on y axis , then store all zero pos in matrix and then later set matrix all 0 in row and col == 0>
-Time Complexity: O(n+m)
+Time Complexity: O(n*m)
 Space Complexity: O(n+m)
 */
 
