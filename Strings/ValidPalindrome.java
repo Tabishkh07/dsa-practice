@@ -1,7 +1,7 @@
 /*
 Problem: <125 - Valid Palindrome>
 Topic: <String>
-Approach: <1st convert all to lower case and remove all letters nd spaces,  check from front and back for same element>
+Approach: <1st convert all to lower case and remove all letters and spaces,  check from front and back for same element>
 Time Complexity: O(n)
 Space Complexity: O(n)
 */
