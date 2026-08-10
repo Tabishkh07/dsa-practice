@@ -2,7 +2,7 @@
 Problem: <242. Valid Anagram>
 Topic: <String + HashMap>
 Approach: <store the frequency of each character in map then use other string to check if hashmap dosent contain or freq is <=0 
-then fasle else reduce the frequency of that character>
+then fasle else reduce the frequency of that character..>
 Time Complexity: O(n)
 Space Complexity: O(n)
 */
