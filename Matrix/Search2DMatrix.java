@@ -27,8 +27,7 @@ class Solution {
 /*
 Problem: <74. Search a 2D Matrix>
 Topic: <Array + matrix>
-Approach: <**Approach:** Treat the 2D matrix as a sorted 1D array and apply binary search, converting `mid` into `(row, col)` using `/` and `%`.
->
+Approach: Treat the 2D matrix as sorted 1D array and apply binary search, converting `mid` into `(row, col)` using `/` and `%`.>
 Time Complexity: O(log m*n)
 Space Complexity: O(1)
 */
